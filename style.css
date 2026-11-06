@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b1020;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+    background: #121a30;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.logo span {
+    color: #8b7cff;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8b7cff;
+}
+
+#menuToggle {
+    display: none;
+}
+
+/* HOME PAGE */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h3 {
+    color: #8b7cff;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    color: #8b7cff;
+}
+
+.hero-content h2 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.hero-content p {
+    color: #b5bdd0;
+    line-height: 1.8;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 160px 160px 25px 25px;
+    border: 5px solid #8b7cff;
+}
+
+/* BUTTONS */
+
+.btn, .btn2 {
+    display: inline-block;
+    padding: 12px 22px;
+    margin-right: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn {
+    background: #8b7cff;
+    color: white;
+}
+
+.btn2 {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn:hover, .btn2:hover {
+    transform: translateY(-4px);
+}
+
+/* SOCIAL LINKS */
+
+.social {
+    margin-top: 30px;
+}
+
+.social a {
+    color: #8b7cff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* FACTS */
+
+.facts {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #121a30;
+    padding: 35px;
+    margin: 20px 7%;
+    border-radius: 15px;
+}
+
+.facts h2 {
+    color: #4de0c1;
+    font-size: 28px;
+}
+
+/* PROJECTS */
+
+.projects {
+    text-align: center;
+    padding: 80px 7%;
+}
+
+.projects h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.project-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #121a30;
+    padding: 35px;
+    border-radius: 15px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #8b7cff;
+}
+
+.card h2 {
+    color: #8b7cff;
+    margin-bottom: 15px;
+}
+
+/* ABOUT PAGE */
+
+.about {
+    padding: 70px 10%;
+}
+
+.about h1, .skills h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about h1 span, .skills h1 span {
+    color: #8b7cff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-content img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #8b7cff;
+}
+
+.about-content p {
+    color: #b5bdd0;
+    margin: 12px 0;
+    line-height: 1.8;
+}
+
+.about-content h2 {
+    margin-bottom: 15px;
+}
+
+.about-content h3 {
+    color: #8b7cff;
+    margin-top: 20px;
+}
+
+/* SKILLS PAGE */
+
+.skills {
+    padding: 70px 10%;
+}
+
+.skill-box {
+    max-width: 750px;
+    margin: auto;
+    background: #121a30;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.skill-box h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.progress {
+    background: #333c53;
+    height: 12px;
+    border-radius: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress div {
+    height: 100%;
+    background: linear-gradient(90deg, #8b7cff, #4de0c1);
+    border-radius: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #121a30;
+    padding: 25px;
+    color: #b5bdd0;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 768px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    #menuToggle {
+        display: block;
+        background: none;
+        color: white;
+        border: none;
+        font-size: 25px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        margin: 8px 0;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 280px;
+    }
+
+    .facts {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        max-width: 100%;
+    }
+
+}
